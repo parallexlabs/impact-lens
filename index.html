@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact Lens (prototype)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="head">
+      <h1 data-t="title"></h1>
+      <button id="lang" type="button"></button>
+    </div>
+    <p data-t="subtitle"></p>
+    <p class="banner" data-t="prototype"></p>
+    <nav>
+      <button type="button" data-tab="assess" data-t="tab_assess" aria-pressed="true"></button>
+      <button type="button" data-tab="portfolio" data-t="tab_portfolio" aria-pressed="false"></button>
+      <button type="button" data-tab="method" data-t="tab_method" aria-pressed="false"></button>
+    </nav>
+  </header>
+  <main>
+    <section id="assess">
+      <form id="loan" novalidate></form>
+      <div id="result" aria-live="polite"></div>
+    </section>
+    <section id="portfolio" hidden></section>
+    <section id="method" hidden></section>
+  </main>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
